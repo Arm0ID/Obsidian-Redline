@@ -1,0 +1,21 @@
+/* Для режима предпросмотра */
+.markdown-preview-view p {
+    text-indent: 2em;
+}
+
+/* Для Live Preview (режим редактирования) */
+.markdown-source-view.mod-cm6 .cm-line:not(.HyperMD-header):not(.HyperMD-list-line) {
+    text-indent: 2em;
+    padding-left: 0; /* Чтобы избежать двойного отступа */
+}
+
+/* Для первого параграфа после заголовка */
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header + .cm-line:not(.HyperMD-header):not(.HyperMD-list-line),
+.markdown-preview-view h1 + p,
+.markdown-preview-view h2 + p,
+.markdown-preview-view h3 + p,
+.markdown-preview-view h4 + p,
+.markdown-preview-view h5 + p,
+.markdown-preview-view h6 + p {
+    text-indent: 0;
+}
